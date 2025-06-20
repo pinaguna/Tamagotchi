@@ -1,34 +1,52 @@
 fileFormatVersion: 2
-guid: 7a1f481839c1d4a49b195e9067b43430
+guid: af34d196916a33c489507893ae4be237
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723107735738678597
-    second: Idle_0
+      213: 3737642103207581742
+    second: Eating_0
   - first:
-      213: -7385789195546760866
-    second: Idle_1
+      213: -5418980842440828331
+    second: Eating_1
   - first:
-      213: 3234629978573100161
-    second: Idle_2
+      213: 8816220868546045450
+    second: Eating_2
   - first:
-      213: 6373048116405451881
-    second: Idle_3
+      213: 3938157403913222600
+    second: Eating_3
   - first:
-      213: 7264182050183361747
-    second: Idle_4
+      213: -2153759689607480041
+    second: Eating_4
   - first:
-      213: -2834552850196481573
-    second: Idle_5
+      213: -3120081095793012915
+    second: Eating_5
   - first:
-      213: 3278449094680734212
-    second: Idle_6
+      213: -6975283085200871322
+    second: Eating_6
   - first:
-      213: 3384493420599841878
-    second: Idle_7
+      213: 5112071971685897962
+    second: Eating_7
   - first:
-      213: -2331352242086191015
-    second: Idle_8
+      213: 2772522030335866133
+    second: Eating_8
+  - first:
+      213: 6171086883858935277
+    second: Eating_9
+  - first:
+      213: -4454700615808036785
+    second: Eating_10
+  - first:
+      213: 4545170202014490789
+    second: Eating_11
+  - first:
+      213: 8401878325783974900
+    second: Eating_12
+  - first:
+      213: -5180099057999677442
+    second: Eating_13
+  - first:
+      213: 5457626365735980952
+    second: Eating_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -150,13 +168,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: Eating_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54d7a982679db8140800000000000000
-      internalID: 4723107735738678597
+      spriteID: e285b33a0b5ced330800000000000000
+      internalID: 3737642103207581742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: Eating_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e596485bbd7608990800000000000000
-      internalID: -7385789195546760866
+      spriteID: 55adaa182a9ebc4b0800000000000000
+      internalID: -5418980842440828331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_2
+      name: Eating_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 184dda4e3d6b3ec20800000000000000
-      internalID: 3234629978573100161
+      spriteID: a06a21b6b22895a70800000000000000
+      internalID: 8816220868546045450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: Eating_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96cb1dafe7d917850800000000000000
-      internalID: 6373048116405451881
+      spriteID: 8c972d92b4527a630800000000000000
+      internalID: 3938157403913222600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_4
+      name: Eating_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d4b2fc561f8fc460800000000000000
-      internalID: 7264182050183361747
+      spriteID: 71df36139fe4c12e0800000000000000
+      internalID: -2153759689607480041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_5
+      name: Eating_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,20 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd9b7fa6335a9a8d0800000000000000
-      internalID: -2834552850196481573
+      spriteID: d4f88d636ce33b4d0800000000000000
+      internalID: -3120081095793012915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_6
+      name: Eating_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,20 +315,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40a65a6e4146f7d20800000000000000
-      internalID: 3278449094680734212
+      spriteID: 660bfca9df0d23f90800000000000000
+      internalID: -6975283085200871322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_7
+      name: Eating_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,20 +337,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 654108f85d228fe20800000000000000
-      internalID: 3384493420599841878
+      spriteID: ae691929f5ab1f640800000000000000
+      internalID: 5112071971685897962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_8
+      name: Eating_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,30 +359,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9506424ec7f55afd0800000000000000
-      internalID: -2331352242086191015
+      spriteID: 5153d1ed81af97620800000000000000
+      internalID: 2772522030335866133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_9
+      name: Eating_9
       rect:
         serializedVersion: 2
-        x: 288
+        x: 290
         y: 0
-        width: 32
-        height: 32
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d1b3cb80b5419a1498b97d801fdce822
-      internalID: 2043612006
+      spriteID: dedeb7633da14a550800000000000000
+      internalID: 6171086883858935277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f405c065469bd22c0800000000000000
+      internalID: -4454700615808036785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating_11
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0a3c6a730b31f30800000000000000
+      internalID: 4545170202014490789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating_12
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3586e72d7799470800000000000000
+      internalID: 8401878325783974900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating_13
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7f7922a579c18b0800000000000000
+      internalID: -5180099057999677442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating_14
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fcf7e83426dbb40800000000000000
+      internalID: 5457626365735980952
       vertices: []
       indices: 
       edges: []
@@ -373,7 +501,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0a988d27f7a9d7349ac86578ae9ed9f2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -383,16 +511,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Idle_0: 4723107735738678597
-      Idle_1: -7385789195546760866
-      Idle_2: 3234629978573100161
-      Idle_3: 6373048116405451881
-      Idle_4: 7264182050183361747
-      Idle_5: -2834552850196481573
-      Idle_6: 3278449094680734212
-      Idle_7: 3384493420599841878
-      Idle_8: -2331352242086191015
-      Idle_9: 2043612006
+      Eating_0: 3737642103207581742
+      Eating_1: -5418980842440828331
+      Eating_10: -4454700615808036785
+      Eating_11: 4545170202014490789
+      Eating_12: 8401878325783974900
+      Eating_13: -5180099057999677442
+      Eating_14: 5457626365735980952
+      Eating_2: 8816220868546045450
+      Eating_3: 3938157403913222600
+      Eating_4: -2153759689607480041
+      Eating_5: -3120081095793012915
+      Eating_6: -6975283085200871322
+      Eating_7: 5112071971685897962
+      Eating_8: 2772522030335866133
+      Eating_9: 6171086883858935277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

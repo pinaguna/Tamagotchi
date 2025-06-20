@@ -27,9 +27,16 @@ public class PetStats : MonoBehaviour
     [Header("Game Over")]
     public Text gameOverText;
 
+    private Animator animator;
+    private float randomAnimCooldown = 6f;
+    private float lastRandomAnimTime = 0f;
+
+
     void Start()
     {
         gameOverText.enabled = false;
+
+        animator = GetComponent<Animator>();
 
         // Başlangıç renkleri yeşil
         SetBarColor(hungerFillImage, true);
@@ -49,6 +56,8 @@ public class PetStats : MonoBehaviour
 
         UpdateUI();
         CheckGameOver();
+        HandleAnimations();
+
     }
 
     void UpdateUI()
@@ -95,4 +104,46 @@ public class PetStats : MonoBehaviour
         hygiene += 30f;
         hygiene = Mathf.Clamp(hygiene, 0, maxValue);
     }
+
+
+    void HandleAnimations()
+    {
+        // Eğer herhangi bir stat çok düşükse öncelikli animasyonlar
+        if (hunger < 20)
+        {
+            animator.SetTrigger("Cry");
+        }
+        else if (happiness < 20)
+        {
+            animator.SetTrigger("Sad");
+        }
+        else if (hygiene < 20)
+        {
+            animator.SetTrigger("Laydown");
+        }
+        else
+        {
+            // Tüm statlar iyi → arada rastgele animasyon
+            if (Time.time - lastRandomAnimTime > randomAnimCooldown)
+            {
+                lastRandomAnimTime = Time.time;
+
+                int randomAnim = Random.Range(0, 3);
+                switch (randomAnim)
+                {
+                    case 0:
+                        animator.SetTrigger("Idle");
+                        break;
+                    case 1:
+                        animator.SetTrigger("Dance");
+                        break;
+                    case 2:
+                        animator.SetTrigger("Sleepy");
+                        break;
+                }
+            }
+        }
+    }
+
+
 }

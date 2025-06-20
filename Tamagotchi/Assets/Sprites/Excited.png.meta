@@ -1,34 +1,43 @@
 fileFormatVersion: 2
-guid: 7a1f481839c1d4a49b195e9067b43430
+guid: 173e8b86829b2fb43be4cc61d0e50cb3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723107735738678597
-    second: Idle_0
+      213: 8909292283219193597
+    second: Excited_0
   - first:
-      213: -7385789195546760866
-    second: Idle_1
+      213: -9212875319725654254
+    second: Excited_1
   - first:
-      213: 3234629978573100161
-    second: Idle_2
+      213: 849595602928727930
+    second: Excited_2
   - first:
-      213: 6373048116405451881
-    second: Idle_3
+      213: 9049765828306959451
+    second: Excited_3
   - first:
-      213: 7264182050183361747
-    second: Idle_4
+      213: 4826668468253093602
+    second: Excited_4
   - first:
-      213: -2834552850196481573
-    second: Idle_5
+      213: 8159860561809248766
+    second: Excited_5
   - first:
-      213: 3278449094680734212
-    second: Idle_6
+      213: -184479230376705235
+    second: Excited_6
   - first:
-      213: 3384493420599841878
-    second: Idle_7
+      213: 1007856193643249864
+    second: Excited_7
   - first:
-      213: -2331352242086191015
-    second: Idle_8
+      213: -7378113201059354374
+    second: Excited_8
+  - first:
+      213: 2644309998857343089
+    second: Excited_9
+  - first:
+      213: 8733001292315411635
+    second: Excited_10
+  - first:
+      213: 5049109628330313273
+    second: Excited_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -150,12 +159,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: Excited_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 25
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -165,19 +174,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54d7a982679db8140800000000000000
-      internalID: 4723107735738678597
+      spriteID: dfea86dc02a24ab70800000000000000
+      internalID: 8909292283219193597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: Excited_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 31
         y: 0
-        width: 32
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,19 +196,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e596485bbd7608990800000000000000
-      internalID: -7385789195546760866
+      spriteID: 21ff9c765ba452080800000000000000
+      internalID: -9212875319725654254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_2
+      name: Excited_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 63
         y: 0
-        width: 32
+        width: 23
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -209,19 +218,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 184dda4e3d6b3ec20800000000000000
-      internalID: 3234629978573100161
+      spriteID: a77fc4313be5acb00800000000000000
+      internalID: 849595602928727930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: Excited_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 0
-        width: 32
+        width: 23
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -231,19 +240,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96cb1dafe7d917850800000000000000
-      internalID: 6373048116405451881
+      spriteID: b5c74b8b21a379d70800000000000000
+      internalID: 9049765828306959451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_4
+      name: Excited_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 127
         y: 0
-        width: 32
+        width: 23
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -253,19 +262,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d4b2fc561f8fc460800000000000000
-      internalID: 7264182050183361747
+      spriteID: 2eeedca2665cbf240800000000000000
+      internalID: 4826668468253093602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_5
+      name: Excited_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 159
         y: 0
-        width: 32
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -275,19 +284,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd9b7fa6335a9a8d0800000000000000
-      internalID: -2834552850196481573
+      spriteID: ef11c5bb2f5ad3170800000000000000
+      internalID: 8159860561809248766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_6
+      name: Excited_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 191
         y: 0
-        width: 32
+        width: 23
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -297,19 +306,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40a65a6e4146f7d20800000000000000
-      internalID: 3278449094680734212
+      spriteID: d2385fc0e19907df0800000000000000
+      internalID: -184479230376705235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_7
+      name: Excited_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 223
         y: 0
-        width: 32
+        width: 23
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -319,19 +328,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 654108f85d228fe20800000000000000
-      internalID: 3384493420599841878
+      spriteID: 8c088c64edf9cfd00800000000000000
+      internalID: 1007856193643249864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_8
+      name: Excited_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 255
         y: 0
-        width: 32
+        width: 23
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -341,19 +350,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9506424ec7f55afd0800000000000000
-      internalID: -2331352242086191015
+      spriteID: af8ac32722dab9990800000000000000
+      internalID: -7378113201059354374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_9
+      name: Excited_9
       rect:
         serializedVersion: 2
-        x: 288
+        x: 287
         y: 0
-        width: 32
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -361,10 +370,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d1b3cb80b5419a1498b97d801fdce822
-      internalID: 2043612006
+      spriteID: 170d7ed0fe972b420800000000000000
+      internalID: 2644309998857343089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited_10
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4cc7be76ad13970800000000000000
+      internalID: 8733001292315411635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited_11
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93602a4a47a021640800000000000000
+      internalID: 5049109628330313273
       vertices: []
       indices: 
       edges: []
@@ -373,7 +426,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0a988d27f7a9d7349ac86578ae9ed9f2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -383,16 +436,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Idle_0: 4723107735738678597
-      Idle_1: -7385789195546760866
-      Idle_2: 3234629978573100161
-      Idle_3: 6373048116405451881
-      Idle_4: 7264182050183361747
-      Idle_5: -2834552850196481573
-      Idle_6: 3278449094680734212
-      Idle_7: 3384493420599841878
-      Idle_8: -2331352242086191015
-      Idle_9: 2043612006
+      Excited_0: 8909292283219193597
+      Excited_1: -9212875319725654254
+      Excited_10: 8733001292315411635
+      Excited_11: 5049109628330313273
+      Excited_2: 849595602928727930
+      Excited_3: 9049765828306959451
+      Excited_4: 4826668468253093602
+      Excited_5: 8159860561809248766
+      Excited_6: -184479230376705235
+      Excited_7: 1007856193643249864
+      Excited_8: -7378113201059354374
+      Excited_9: 2644309998857343089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
