@@ -997,6 +997,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -7547,7 +7573,304 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Interior without swadows_0: 7848888294618684635
+      Interior without swadows_1: -2384481202063447783
+      Interior without swadows_10: 796412047812279851
+      Interior without swadows_100: -5556252845154001754
+      Interior without swadows_101: -7099678767401860537
+      Interior without swadows_102: -8197519858402987722
+      Interior without swadows_103: 1133888375906755235
+      Interior without swadows_104: 3062573806703059092
+      Interior without swadows_105: -9065085215825731030
+      Interior without swadows_106: 9180067089847500755
+      Interior without swadows_107: 669832440939485608
+      Interior without swadows_108: -8620788659132207818
+      Interior without swadows_109: -7282755298315910742
+      Interior without swadows_11: -5326859515994518989
+      Interior without swadows_110: 4001304858848061752
+      Interior without swadows_111: -2978624527292827929
+      Interior without swadows_112: -1171562846196719476
+      Interior without swadows_113: -8462653401691096769
+      Interior without swadows_114: 8045577813783876270
+      Interior without swadows_115: 104788203039896335
+      Interior without swadows_116: 6038971400819617155
+      Interior without swadows_117: -6809817466908132112
+      Interior without swadows_118: 2859403162436528525
+      Interior without swadows_119: -262415073716491734
+      Interior without swadows_12: 56399126837091546
+      Interior without swadows_120: -2125787601228887680
+      Interior without swadows_121: 7564154180324880941
+      Interior without swadows_122: -8066223036510890423
+      Interior without swadows_123: 1488543423038005119
+      Interior without swadows_124: -863262275743709171
+      Interior without swadows_125: -6551486246192044120
+      Interior without swadows_126: -4085605179699508626
+      Interior without swadows_127: 4956936531598529890
+      Interior without swadows_128: 8587845699633748650
+      Interior without swadows_129: 6566060955743671242
+      Interior without swadows_13: -8153917082346327366
+      Interior without swadows_130: -5753669205502831155
+      Interior without swadows_131: -6544929848092269163
+      Interior without swadows_132: 5913464538614879095
+      Interior without swadows_133: 8254269695988610834
+      Interior without swadows_134: 340816322309875883
+      Interior without swadows_135: -489441510023014137
+      Interior without swadows_136: 4155295888420946065
+      Interior without swadows_137: -1186302730695238487
+      Interior without swadows_138: -4866118166399410046
+      Interior without swadows_139: 3942816259580107752
+      Interior without swadows_14: -3292608228276583682
+      Interior without swadows_140: 2046100375787554701
+      Interior without swadows_141: -659814308238805629
+      Interior without swadows_142: -4062091098303753594
+      Interior without swadows_143: 6125679174054849961
+      Interior without swadows_144: -2293714625888398148
+      Interior without swadows_145: -6293567580576745631
+      Interior without swadows_146: -3984187530072549679
+      Interior without swadows_147: -3165541187738256740
+      Interior without swadows_148: 3829268816778304626
+      Interior without swadows_149: 8136978679586710087
+      Interior without swadows_15: 1088925700673574939
+      Interior without swadows_150: -1906703993423052225
+      Interior without swadows_151: -4661998035771585873
+      Interior without swadows_152: -1175199524000466061
+      Interior without swadows_153: -5934572531607734161
+      Interior without swadows_154: -7239606952491173723
+      Interior without swadows_155: 8400651683983916079
+      Interior without swadows_156: 583647728460076721
+      Interior without swadows_157: -8433116553461625980
+      Interior without swadows_158: 6204324451539440965
+      Interior without swadows_159: 2947377483681868183
+      Interior without swadows_16: 4348256403107017511
+      Interior without swadows_160: 654359814044096642
+      Interior without swadows_161: 5257336923691308850
+      Interior without swadows_162: -3064610395878439734
+      Interior without swadows_163: 6365793235384568044
+      Interior without swadows_164: -5697266397757214790
+      Interior without swadows_165: -1339894260803186687
+      Interior without swadows_166: -6515773208655046046
+      Interior without swadows_167: 8620587993831823040
+      Interior without swadows_168: 3908094902289976483
+      Interior without swadows_169: 1641457898386817802
+      Interior without swadows_17: -6736756409565723248
+      Interior without swadows_170: 2729657295846188720
+      Interior without swadows_171: -8415190607799454623
+      Interior without swadows_172: 7523302595938103799
+      Interior without swadows_173: 2901378933860238931
+      Interior without swadows_174: -2015904536303250720
+      Interior without swadows_175: 2928772051792029175
+      Interior without swadows_176: -6929051183829309530
+      Interior without swadows_177: -218660920116306651
+      Interior without swadows_178: -7204638347934563235
+      Interior without swadows_179: -1186803722555684594
+      Interior without swadows_18: 6880932076971562418
+      Interior without swadows_180: 6816037939094346281
+      Interior without swadows_181: -7584642630988079180
+      Interior without swadows_182: 2167327115173629719
+      Interior without swadows_183: -8540771191909371640
+      Interior without swadows_184: -6673492062887441605
+      Interior without swadows_185: -1975717378003031354
+      Interior without swadows_186: 3506936843642069878
+      Interior without swadows_187: -3184423902082465615
+      Interior without swadows_188: 1936503941660883704
+      Interior without swadows_189: -172223510171147331
+      Interior without swadows_19: -613544009634637214
+      Interior without swadows_190: 2256356053740631910
+      Interior without swadows_191: 1728512985176036172
+      Interior without swadows_192: 4235948214744599254
+      Interior without swadows_193: -2015887922764881227
+      Interior without swadows_194: -3234905624715536601
+      Interior without swadows_195: -7849649499497265888
+      Interior without swadows_196: -6547651823238903545
+      Interior without swadows_197: 7794273531195875113
+      Interior without swadows_198: -1777843767894690366
+      Interior without swadows_199: 9169531662986425301
+      Interior without swadows_2: -3742132851498676582
+      Interior without swadows_20: 4553801202875192294
+      Interior without swadows_200: 8759642618785260198
+      Interior without swadows_201: 4590612139028670918
+      Interior without swadows_202: 5663452693312239087
+      Interior without swadows_203: 5951087527393346436
+      Interior without swadows_204: 6453676030103687177
+      Interior without swadows_205: 5860170202382163808
+      Interior without swadows_206: 7222457554839449583
+      Interior without swadows_207: 4485155774478796881
+      Interior without swadows_208: -2192359170143428728
+      Interior without swadows_209: -9174620901681125351
+      Interior without swadows_21: -4264651301186677466
+      Interior without swadows_210: 4151527819640937009
+      Interior without swadows_211: -3804586171857769562
+      Interior without swadows_212: -3594566787727151529
+      Interior without swadows_213: -6217313246186472850
+      Interior without swadows_214: -3332409396861710193
+      Interior without swadows_215: -1302364327476050577
+      Interior without swadows_216: -2801130532971370890
+      Interior without swadows_217: 5216630989843079233
+      Interior without swadows_218: -2417648870553280844
+      Interior without swadows_219: 3164286318948235115
+      Interior without swadows_22: -450132950550248002
+      Interior without swadows_220: 5680711390225091676
+      Interior without swadows_221: 3586131574457258327
+      Interior without swadows_222: 7613820987766260564
+      Interior without swadows_223: 6818870386294172661
+      Interior without swadows_224: -9127992215655001940
+      Interior without swadows_225: 1365376985205742188
+      Interior without swadows_226: 4876588368003657491
+      Interior without swadows_227: 3104308934927615323
+      Interior without swadows_228: -2879625261443554680
+      Interior without swadows_229: -7368425312056775211
+      Interior without swadows_23: 5161957533726829192
+      Interior without swadows_230: 710861853481139905
+      Interior without swadows_231: 2842283942622068629
+      Interior without swadows_232: 8820658595538470465
+      Interior without swadows_233: 3264369149480086465
+      Interior without swadows_234: -3453793804796189450
+      Interior without swadows_235: -2028109214681563651
+      Interior without swadows_236: -1770161944375153371
+      Interior without swadows_237: -6012845176043591089
+      Interior without swadows_238: 773666465497472521
+      Interior without swadows_239: 5234332347915137286
+      Interior without swadows_24: -4792239940363073590
+      Interior without swadows_240: 3751545205516145067
+      Interior without swadows_241: -7482344673987277849
+      Interior without swadows_242: 409954031490034090
+      Interior without swadows_243: 4889604674544273556
+      Interior without swadows_244: -3791144733087886274
+      Interior without swadows_245: -7077156557598192589
+      Interior without swadows_246: -4194537057316868277
+      Interior without swadows_247: 3554883942562336641
+      Interior without swadows_248: -2624129908170200350
+      Interior without swadows_249: 3774995856249438930
+      Interior without swadows_25: -915840635571566247
+      Interior without swadows_250: 80787613341961742
+      Interior without swadows_251: -6071946233385656441
+      Interior without swadows_252: 2904533397181623003
+      Interior without swadows_253: -2127380501013066661
+      Interior without swadows_254: 5969025364437987479
+      Interior without swadows_255: 5220654712617469424
+      Interior without swadows_256: 7737924758403510582
+      Interior without swadows_257: -6962191141924845699
+      Interior without swadows_258: -2247949463781609469
+      Interior without swadows_259: 4113751279120343478
+      Interior without swadows_26: 3388272957026249707
+      Interior without swadows_260: 2223576431262565892
+      Interior without swadows_261: 1298384309562960537
+      Interior without swadows_262: 2470542515622415284
+      Interior without swadows_263: 6097285130200770260
+      Interior without swadows_264: 5776303655061470759
+      Interior without swadows_265: 5863722394965615559
+      Interior without swadows_266: -3358942938515586798
+      Interior without swadows_267: 7584779410507792267
+      Interior without swadows_268: 4004583609685382319
+      Interior without swadows_269: -5117897251780797791
+      Interior without swadows_27: 7575001834982541287
+      Interior without swadows_270: -8123415792065205576
+      Interior without swadows_271: 8207905253698313512
+      Interior without swadows_272: -649024346514275169
+      Interior without swadows_273: 3739428649033984571
+      Interior without swadows_274: -3415181975393621427
+      Interior without swadows_275: 4898604486154408766
+      Interior without swadows_276: 8347406417425974460
+      Interior without swadows_277: -2137399937043023673
+      Interior without swadows_278: -6721237857641359841
+      Interior without swadows_279: 8675743311482099607
+      Interior without swadows_28: 4577001066795395575
+      Interior without swadows_280: 1774141424074279987
+      Interior without swadows_281: -8793232198703858490
+      Interior without swadows_282: -7275513596184514126
+      Interior without swadows_283: 6427204599478256680
+      Interior without swadows_284: 7749302549107831546
+      Interior without swadows_285: -2164722978077299518
+      Interior without swadows_286: -5272103107218008756
+      Interior without swadows_287: -3191570729916384775
+      Interior without swadows_288: -5369145429853266350
+      Interior without swadows_289: 4784709686480385139
+      Interior without swadows_29: -5184068316951196861
+      Interior without swadows_290: 3579390790140120444
+      Interior without swadows_291: 3910264485153360947
+      Interior without swadows_292: 7138041495198071169
+      Interior without swadows_293: -4667301905361146610
+      Interior without swadows_294: 8945328625641279137
+      Interior without swadows_295: 8231781633519848476
+      Interior without swadows_296: 3529046300134228467
+      Interior without swadows_3: -3252214658983732442
+      Interior without swadows_30: -8758313926072286522
+      Interior without swadows_31: -6317440020980531350
+      Interior without swadows_32: 4477809269264651494
+      Interior without swadows_33: 6772171107686146683
+      Interior without swadows_34: 208967445263901810
+      Interior without swadows_35: 9112884519550272484
+      Interior without swadows_36: 8494401448333644787
+      Interior without swadows_37: -2686785630056317484
+      Interior without swadows_38: 881873954474953987
+      Interior without swadows_39: -290426250485395302
+      Interior without swadows_4: -7969873326529773317
+      Interior without swadows_40: 3978712815577157900
+      Interior without swadows_41: -4344380031356774962
+      Interior without swadows_42: 5006826384001123925
+      Interior without swadows_43: 2823750165602163048
+      Interior without swadows_44: 919960393035718275
+      Interior without swadows_45: -161799566730640118
+      Interior without swadows_46: -8838900891955910027
+      Interior without swadows_47: -4556514002269457875
+      Interior without swadows_48: -1026481300103957165
+      Interior without swadows_49: -7209080869911104263
+      Interior without swadows_5: 5167852236451850720
+      Interior without swadows_50: 4003700279695072130
+      Interior without swadows_51: -6837992247950179614
+      Interior without swadows_52: -6796669909577215972
+      Interior without swadows_53: -2228081759602476606
+      Interior without swadows_54: 2906697540595525062
+      Interior without swadows_55: 8687759023736599956
+      Interior without swadows_56: 1012373552626885141
+      Interior without swadows_57: -4461201700816374311
+      Interior without swadows_58: 792261480803428598
+      Interior without swadows_59: 313213419899946133
+      Interior without swadows_6: -3920314291261339750
+      Interior without swadows_60: 8513501029348453088
+      Interior without swadows_61: 3776280785507554675
+      Interior without swadows_62: 2216234040452054690
+      Interior without swadows_63: 3801943469465891835
+      Interior without swadows_64: 606735715176756704
+      Interior without swadows_65: -1231006610816568110
+      Interior without swadows_66: 5502899528843348258
+      Interior without swadows_67: 2824603222426009675
+      Interior without swadows_68: 4615753652703508843
+      Interior without swadows_69: 9137149027532527397
+      Interior without swadows_7: 4950716330379433194
+      Interior without swadows_70: -111482570648358635
+      Interior without swadows_71: 7238281965233780234
+      Interior without swadows_72: 3112131841494304995
+      Interior without swadows_73: -2290501548396740705
+      Interior without swadows_74: 2194071660854021500
+      Interior without swadows_75: 4574502155342585086
+      Interior without swadows_76: -6644327318485735124
+      Interior without swadows_77: -9193460418402892074
+      Interior without swadows_78: 5232887318877762704
+      Interior without swadows_79: 9197097686926255621
+      Interior without swadows_8: 420205754683951849
+      Interior without swadows_80: -862038605303807325
+      Interior without swadows_81: 8189130918249834128
+      Interior without swadows_82: 1552234144495264457
+      Interior without swadows_83: -9132651967031899710
+      Interior without swadows_84: -258129299701949743
+      Interior without swadows_85: 3643557087538254634
+      Interior without swadows_86: 1194578765978242622
+      Interior without swadows_87: 7997198532108586577
+      Interior without swadows_88: -3380099888341433090
+      Interior without swadows_89: 2947658504604852684
+      Interior without swadows_9: -9080094133071757364
+      Interior without swadows_90: -7327640526650341381
+      Interior without swadows_91: 3491248226797806611
+      Interior without swadows_92: 6159908461965870918
+      Interior without swadows_93: -6543099920387146523
+      Interior without swadows_94: -2294892339222607867
+      Interior without swadows_95: 6912369035187907678
+      Interior without swadows_96: -7326148144332856649
+      Interior without swadows_97: 7963388207543881357
+      Interior without swadows_98: 265637823060911266
+      Interior without swadows_99: -4636342912439077378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
