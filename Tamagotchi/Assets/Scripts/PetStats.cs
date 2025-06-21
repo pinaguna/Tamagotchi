@@ -31,14 +31,12 @@ public class PetStats : MonoBehaviour
     private float randomAnimCooldown = 6f;
     private float lastRandomAnimTime = 0f;
 
-
     void Start()
     {
         gameOverText.enabled = false;
 
         animator = GetComponent<Animator>();
 
-        // Başlangıç renkleri yeşil
         SetBarColor(hungerFillImage, true);
         SetBarColor(happinessFillImage, true);
         SetBarColor(hygieneFillImage, true);
@@ -57,7 +55,6 @@ public class PetStats : MonoBehaviour
         UpdateUI();
         CheckGameOver();
         HandleAnimations();
-
     }
 
     void UpdateUI()
@@ -86,29 +83,8 @@ public class PetStats : MonoBehaviour
         }
     }
 
-    // 🔹 Manuel bağlamak için public olmalı:
-    public void FeedPet()
-    {
-        hunger += 20f;
-        hunger = Mathf.Clamp(hunger, 0, maxValue);
-    }
-
-    public void PlayWithPet()
-    {
-        happiness += 25f;
-        happiness = Mathf.Clamp(happiness, 0, maxValue);
-    }
-
-    public void CleanPet()
-    {
-        hygiene += 30f;
-        hygiene = Mathf.Clamp(hygiene, 0, maxValue);
-    }
-
-
     void HandleAnimations()
     {
-        // Eğer herhangi bir stat çok düşükse öncelikli animasyonlar
         if (hunger < 20)
         {
             animator.SetTrigger("Cry");
@@ -123,7 +99,6 @@ public class PetStats : MonoBehaviour
         }
         else
         {
-            // Tüm statlar iyi → arada rastgele animasyon
             if (Time.time - lastRandomAnimTime > randomAnimCooldown)
             {
                 lastRandomAnimTime = Time.time;
@@ -145,5 +120,76 @@ public class PetStats : MonoBehaviour
         }
     }
 
+    //  HUNGER
+    public void FeedFromFood()
+    {
+        hunger += 15f;
+        hunger = Mathf.Clamp(hunger, 0, maxValue);
+    }
 
+    public void FeedFromFoodBag()
+    {
+        hunger += 20f;
+        hunger = Mathf.Clamp(hunger, 0, maxValue);
+    }
+
+    public void FeedFromWater()
+    {
+        hunger += 10f;
+        hunger = Mathf.Clamp(hunger, 0, maxValue);
+    }
+
+    // HAPPINESS (but happiness +=, hunger -=)
+    public void PlayWithCatBed()
+    {
+        happiness += 20f;
+        hunger -= 5f;
+        happiness = Mathf.Clamp(happiness, 0, maxValue);
+        hunger = Mathf.Clamp(hunger, 0, maxValue);
+    }
+
+    public void PlayWithBlueBall()
+    {
+        happiness += 15f;
+        hunger -= 5f;
+        happiness = Mathf.Clamp(happiness, 0, maxValue);
+        hunger = Mathf.Clamp(hunger, 0, maxValue);
+    }
+
+    public void PlayWithGreenBall()
+    {
+        happiness += 10f;
+        hunger -= 5f;
+        happiness = Mathf.Clamp(happiness, 0, maxValue);
+        hunger = Mathf.Clamp(hunger, 0, maxValue);
+    }
+
+    public void PlayWithCatHouse()
+    {
+        happiness += 25f;
+        hunger -= 5f;
+        happiness = Mathf.Clamp(happiness, 0, maxValue);
+        hunger = Mathf.Clamp(hunger, 0, maxValue);
+    }
+
+    //  HYGIENE
+    public void CleanWithSoap()
+    {
+        hygiene += 30f;
+        happiness -= 10f;
+        hygiene = Mathf.Clamp(hygiene, 0, maxValue);
+        happiness = Mathf.Clamp(happiness, 0, maxValue);
+    }
+
+    public void UsePlant1()
+    {
+        hygiene -= 15f;
+        hygiene = Mathf.Clamp(hygiene, 0, maxValue);
+    }
+
+    public void UsePlant2()
+    {
+        hygiene -= 10f;
+        hygiene = Mathf.Clamp(hygiene, 0, maxValue);
+    }
 }
