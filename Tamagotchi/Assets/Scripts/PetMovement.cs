@@ -5,8 +5,8 @@ using UnityEngine;
 public class PetMovement : MonoBehaviour
 {
     [Header("Sýnýrlar")]
-    public Vector2 minPosition = new Vector2(-15f, -2f); // sol-alt
-    public Vector2 maxPosition = new Vector2(-12f, 0f);  // sað-üst
+    public Vector2 minPosition = new Vector2(-13.39f, -1.44f); // sol-alt
+    public Vector2 maxPosition = new Vector2(-11.9f, -1.94f);  // sað-üst
 
 
     [Header("Hareket Ayarlarý")]

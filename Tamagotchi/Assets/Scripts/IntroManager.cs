@@ -16,10 +16,6 @@ public class IntroManager : MonoBehaviour
     public GameObject catPrefab;
     public Transform spawnPoint;
 
-    public void OnStartButtonPressed()
-    {
-        Instantiate(catPrefab, spawnPoint.position, Quaternion.identity);
-    }
 
     public void OnStartButtonClicked()
     {
@@ -55,5 +51,9 @@ public class IntroManager : MonoBehaviour
 
             introPanel.SetActive(false);
             gameUI.SetActive(true);
-        }
+
+            GameObject cat = Instantiate(catPrefab, spawnPoint.position, Quaternion.identity);
+            FindObjectOfType<PetStats>().catObject = cat;
+
+    }
 }
