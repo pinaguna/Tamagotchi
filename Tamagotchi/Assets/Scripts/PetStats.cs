@@ -25,15 +25,17 @@ public class PetStats : MonoBehaviour
     public float hygieneDecay = 5.75f;
 
 
-    private Animator catAnimator;
+    public Animator catAnimator;
     public GameObject catObject;
     public GameObject OutroPanel;
 
-    private float randomAnimCooldown = 6f;
+    private float randomAnimCooldown = 5f;
     private float lastRandomAnimTime = 0f;
+    private float animDuration = 3f;  // animasyonlarýn ortalama süresi
+    private float animStartTime = 0f;
+    private bool isRandomAnimPlaying = false;
 
-    public AudioSource gameOverAudio;
-
+    private bool isGameStarted = false;
 
     void Start()
     {
@@ -44,8 +46,18 @@ public class PetStats : MonoBehaviour
         SetBarColor(hygieneFillImage, true);
     }
 
+    public void StartGame()
+    {
+        isGameStarted = true;
+        Time.timeScale = 1f;  // Oyunu baþlat (zaman akýþý normal olsun)
+        OutroPanel.SetActive(false);  // Eðer Outro açýksa kapat
+    }
+
     void Update()
     {
+        if (!isGameStarted)
+            return;
+
         hunger -= hungerDecay * Time.deltaTime;
         happiness -= happinessDecay * Time.deltaTime;
         hygiene -= hygieneDecay * Time.deltaTime;
@@ -84,13 +96,29 @@ public class PetStats : MonoBehaviour
 
             OutroPanel.SetActive(true);
 
-            if (gameOverAudio != null)
-            {
-                Debug.Log("GameOver sesi çalýyor!");
-                gameOverAudio.PlayDelayed(0.01f);
-            }
             Time.timeScale = 0f;
         }
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Oyun kapatýlýyor...");
+        Application.Quit();
+    }
+
+
+    public void ResetStats()
+    {
+        hunger = happiness = hygiene = maxValue;
+        UpdateUI();
+
+        if (catObject != null)
+        {
+            Destroy(catObject);
+        }
+
+        catObject = null;
+        catAnimator = null;
     }
 
     public enum CatAnimState
@@ -106,16 +134,27 @@ public class PetStats : MonoBehaviour
     void HandleAnimations()
     {
         if (hunger < 20)
+        {
             catAnimator.SetInteger("State", (int)CatAnimState.Cry);
+            isRandomAnimPlaying = false;
+        }
         else if (happiness < 20)
+        {
             catAnimator.SetInteger("State", (int)CatAnimState.Sad);
+            isRandomAnimPlaying = false;
+        }
         else if (hygiene < 20)
+        {
             catAnimator.SetInteger("State", (int)CatAnimState.Laydown);
+            isRandomAnimPlaying = false;
+        }
         else
         {
-            if (Time.time - lastRandomAnimTime > randomAnimCooldown)
+            if (!isRandomAnimPlaying && Time.time - lastRandomAnimTime > randomAnimCooldown)
             {
                 lastRandomAnimTime = Time.time;
+                animStartTime = Time.time;
+                isRandomAnimPlaying = true;
 
                 int randomAnim = Random.Range(0, 3);
                 switch (randomAnim)
@@ -130,6 +169,12 @@ public class PetStats : MonoBehaviour
                         catAnimator.SetInteger("State", (int)CatAnimState.Sleepy);
                         break;
                 }
+            }
+
+            if (isRandomAnimPlaying && Time.time - animStartTime > animDuration)
+            {
+                catAnimator.SetInteger("State", (int)CatAnimState.Idle);
+                isRandomAnimPlaying = false;
             }
         }
     }
