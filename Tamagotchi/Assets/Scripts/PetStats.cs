@@ -24,26 +24,40 @@ public class PetStats : MonoBehaviour
     public float happinessDecay = 5.5f;
     public float hygieneDecay = 5.75f;
 
-    [Header("Game Over")]
-    public Text gameOverText;
 
-    private Animator animator;
-    private float randomAnimCooldown = 6f;
+    public Animator catAnimator;
+    public GameObject catObject;
+    public GameObject OutroPanel;
+
+    private float randomAnimCooldown = 5f;
     private float lastRandomAnimTime = 0f;
+    private float animDuration = 3f;  // animasyonlarýn ortalama süresi
+    private float animStartTime = 0f;
+    private bool isRandomAnimPlaying = false;
+
+    private bool isGameStarted = false;
 
     void Start()
     {
-        gameOverText.enabled = false;
-
-        animator = GetComponent<Animator>();
+        catAnimator = catObject.GetComponent<Animator>();
 
         SetBarColor(hungerFillImage, true);
         SetBarColor(happinessFillImage, true);
         SetBarColor(hygieneFillImage, true);
     }
 
+    public void StartGame()
+    {
+        isGameStarted = true;
+        Time.timeScale = 1f;  // Oyunu baþlat (zaman akýþý normal olsun)
+        OutroPanel.SetActive(false);  // Eðer Outro açýksa kapat
+    }
+
     void Update()
     {
+        if (!isGameStarted)
+            return;
+
         hunger -= hungerDecay * Time.deltaTime;
         happiness -= happinessDecay * Time.deltaTime;
         hygiene -= hygieneDecay * Time.deltaTime;
@@ -77,48 +91,95 @@ public class PetStats : MonoBehaviour
     {
         if (hunger <= 0 || happiness <= 0 || hygiene <= 0)
         {
-            gameOverText.text = "Game Over!";
-            gameOverText.enabled = true;
+            if (catObject != null)
+                Destroy(catObject);
+
+            OutroPanel.SetActive(true);
+
             Time.timeScale = 0f;
         }
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Oyun kapatýlýyor...");
+        Application.Quit();
+    }
+
+
+    public void ResetStats()
+    {
+        hunger = happiness = hygiene = maxValue;
+        UpdateUI();
+
+        if (catObject != null)
+        {
+            Destroy(catObject);
+        }
+
+        catObject = null;
+        catAnimator = null;
+    }
+
+    public enum CatAnimState
+    {
+        Idle = 0,
+        Cry = 1,
+        Sad = 2,
+        Laydown = 3,
+        Dance = 4,
+        Sleepy = 5
     }
 
     void HandleAnimations()
     {
         if (hunger < 20)
         {
-            animator.SetTrigger("Cry");
+            catAnimator.SetInteger("State", (int)CatAnimState.Cry);
+            isRandomAnimPlaying = false;
         }
         else if (happiness < 20)
         {
-            animator.SetTrigger("Sad");
+            catAnimator.SetInteger("State", (int)CatAnimState.Sad);
+            isRandomAnimPlaying = false;
         }
         else if (hygiene < 20)
         {
-            animator.SetTrigger("Laydown");
+            catAnimator.SetInteger("State", (int)CatAnimState.Laydown);
+            isRandomAnimPlaying = false;
         }
         else
         {
-            if (Time.time - lastRandomAnimTime > randomAnimCooldown)
+            if (!isRandomAnimPlaying && Time.time - lastRandomAnimTime > randomAnimCooldown)
             {
                 lastRandomAnimTime = Time.time;
+                animStartTime = Time.time;
+                isRandomAnimPlaying = true;
 
                 int randomAnim = Random.Range(0, 3);
                 switch (randomAnim)
                 {
                     case 0:
-                        animator.SetTrigger("Idle");
+                        catAnimator.SetInteger("State", (int)CatAnimState.Idle);
                         break;
                     case 1:
-                        animator.SetTrigger("Dance");
+                        catAnimator.SetInteger("State", (int)CatAnimState.Dance);
                         break;
                     case 2:
-                        animator.SetTrigger("Sleepy");
+                        catAnimator.SetInteger("State", (int)CatAnimState.Sleepy);
                         break;
                 }
             }
+
+            if (isRandomAnimPlaying && Time.time - animStartTime > animDuration)
+            {
+                catAnimator.SetInteger("State", (int)CatAnimState.Idle);
+                isRandomAnimPlaying = false;
+            }
         }
     }
+
+
 
     //  HUNGER
     public void FeedFromFood()
