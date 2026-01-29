@@ -14,5 +14,4 @@ Interacting with different objects in the room increases or decreases these valu
 
 -Interactive room objects affecting pet stats
 
-<img width="1090" height="456" alt="Image" src="https://github.com/user-attachments/assets/d8b742cf-803a-4ec8-a1cb-4dc361757458" />
 <img width="551" height="224" alt="Image" src="https://github.com/user-attachments/assets/7f948145-9ae5-4b8c-b760-e46529e6145c" />
