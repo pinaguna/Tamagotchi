@@ -12,3 +12,4 @@ Three status bars: cleanliness, happiness, and hunger
 Interactive room objects affecting pet stats
 
 <img width="1090" height="456" alt="Image" src="https://github.com/user-attachments/assets/d8b742cf-803a-4ec8-a1cb-4dc361757458" />
+![Image](https://github.com/user-attachments/assets/2a3288d9-fafb-4607-a461-416386351498)
